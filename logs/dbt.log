@@ -1,0 +1,134 @@
+[0m15:03:51.284070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C53B18D5E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C53C152220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C53C152550>]}
+
+
+============================== 15:03:51.284570 | a33cd000-5b20-44db-b693-53815110ed78 ==============================
+[0m15:03:51.284570 [info ] [MainThread]: Running with dbt=1.5.0
+[0m15:03:51.284570 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\binit.amatya\\.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:04:01.443982 [error] [MainThread]: Encountered an error:
+
+[0m15:04:01.447608 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\binit.amatya\AppData\Local\Programs\Python\Python38\lib\site-packages\dbt\cli\requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "C:\Users\binit.amatya\AppData\Local\Programs\Python\Python38\lib\site-packages\dbt\cli\requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\binit.amatya\AppData\Local\Programs\Python\Python38\lib\site-packages\dbt\cli\main.py", line 459, in init
+    results = task.run()
+  File "C:\Users\binit.amatya\AppData\Local\Programs\Python\Python38\lib\site-packages\dbt\task\init.py", line 286, in run
+    project_name = self.get_valid_project_name()
+  File "C:\Users\binit.amatya\AppData\Local\Programs\Python\Python38\lib\site-packages\dbt\task\init.py", line 243, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "C:\Users\binit.amatya\AppData\Local\Programs\Python\Python38\lib\site-packages\click\termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\binit.amatya\AppData\Local\Programs\Python\Python38\lib\site-packages\click\termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m15:04:01.450978 [debug] [MainThread]: Command `dbt init` failed at 15:04:01.449969 after 10.26 seconds
+[0m15:04:01.450978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C53B18D5E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C53C16F2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C53C16F310>]}
+[0m15:04:01.451976 [debug] [MainThread]: Flushing usage events
+[0m15:04:20.484884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A605A20520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A601D97BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A6069F2520>]}
+
+
+============================== 15:04:20.486893 | ccc53f9b-8e2a-4d24-b861-bef7fcb0125a ==============================
+[0m15:04:20.486893 [info ] [MainThread]: Running with dbt=1.5.0
+[0m15:04:20.487943 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\binit.amatya\\.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:04:20.490333 [debug] [MainThread]: Starter project path: C:\Users\binit.amatya\AppData\Local\Programs\Python\Python38\lib\site-packages\dbt\include\starter_project
+[0m15:04:25.004218 [info ] [MainThread]: Profile dbt_tutorial written to C:\Users\binit.amatya\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m15:04:25.006140 [info ] [MainThread]: 
+Your new dbt project "dbt_tutorial" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:04:25.008715 [debug] [MainThread]: Command `dbt init` succeeded at 15:04:25.008715 after 4.56 seconds
+[0m15:04:25.009215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A605A20520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A601503940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A601D97B80>]}
+[0m15:04:25.009215 [debug] [MainThread]: Flushing usage events
+[0m15:04:53.847150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CB82BD670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CB9281970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CB9281130>]}
+
+
+============================== 15:04:53.850165 | 3f282127-62b1-4047-aea8-f8627f065651 ==============================
+[0m15:04:53.850165 [info ] [MainThread]: Running with dbt=1.5.0
+[0m15:04:53.852179 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\binit.amatya\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:04:53.853222 [info ] [MainThread]: A project called dbt_tutorial already exists here.
+[0m15:04:53.854233 [debug] [MainThread]: Command `dbt init` succeeded at 15:04:53.854233 after 0.05 seconds
+[0m15:04:53.855308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CB82BD670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CB92816D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CB9281730>]}
+[0m15:04:53.855308 [debug] [MainThread]: Flushing usage events
+[0m15:05:41.741028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C95492520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C964628E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C96462430>]}
+
+
+============================== 15:05:41.757265 | 216e025e-d364-478d-95e3-d338aa16d57a ==============================
+[0m15:05:41.757265 [info ] [MainThread]: Running with dbt=1.5.0
+[0m15:05:41.760327 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\binit.amatya\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:05:41.760694 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\binit.amatya\OneDrive - Logic Information Systems, Inc\dbt-tutorial\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:05:41.762614 [debug] [MainThread]: Command `dbt clean` failed at 15:05:41.762614 after 0.05 seconds
+[0m15:05:41.762614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C95492520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C96453EE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C96462910>]}
+[0m15:05:41.762614 [debug] [MainThread]: Flushing usage events
+[0m15:05:52.718395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB451AD5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB461728E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB461723A0>]}
+
+
+============================== 15:05:52.735083 | e701e8b3-28d3-4fc8-8c27-f7812c16ffd4 ==============================
+[0m15:05:52.735083 [info ] [MainThread]: Running with dbt=1.5.0
+[0m15:05:52.735083 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\binit.amatya\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:05:52.737759 [debug] [MainThread]: Starter project path: C:\Users\binit.amatya\AppData\Local\Programs\Python\Python38\lib\site-packages\dbt\include\starter_project
+[0m15:06:47.362984 [info ] [MainThread]: Profile dbt_snowflake written to C:\Users\binit.amatya\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:06:47.364367 [info ] [MainThread]: 
+Your new dbt project "dbt_snowflake" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:06:47.366983 [debug] [MainThread]: Command `dbt init` succeeded at 15:06:47.366983 after 54.67 seconds
+[0m15:06:47.367484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB451AD5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB40C83940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB461BB6D0>]}
+[0m15:06:47.367484 [debug] [MainThread]: Flushing usage events
+[0m15:08:54.928144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269100CD5E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269118929A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026911892370>]}
+
+
+============================== 15:08:54.928144 | 3a329902-38b4-4baf-9a17-b9fe1b2de38e ==============================
+[0m15:08:54.928144 [info ] [MainThread]: Running with dbt=1.5.0
+[0m15:08:54.928144 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\binit.amatya\\.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:08:54.932740 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\binit.amatya\OneDrive - Logic Information Systems, Inc\dbt-tutorial\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:08:54.933739 [debug] [MainThread]: Command `dbt test` failed at 15:08:54.933739 after 0.05 seconds
+[0m15:08:54.934853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269100CD5E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026911892A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269118928B0>]}
+[0m15:08:54.935354 [debug] [MainThread]: Flushing usage events
+[0m10:34:02.661324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022CC7FF6580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022CC9F93940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022CC9F930D0>]}
+
+
+============================== 10:34:02.665602 | 3869acaf-f935-4c10-acff-2f2dd358dbbd ==============================
+[0m10:34:02.665602 [info ] [MainThread]: Running with dbt=1.5.0
+[0m10:34:02.667236 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\binit.amatya\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m10:34:02.667236 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\binit.amatya\OneDrive - Logic Information Systems, Inc\dbt-tutorial\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:34:02.669243 [debug] [MainThread]: Command `dbt run` failed at 10:34:02.669243 after 0.05 seconds
+[0m10:34:02.669243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022CC7FF6580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022CC9F939D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022CC9F93850>]}
+[0m10:34:02.670244 [debug] [MainThread]: Flushing usage events
